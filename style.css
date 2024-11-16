@@ -135,6 +135,7 @@ main {
   background-repeat: no-repeat;
   width: 100%;
   height: 40vh;
+  overflow: hidden;
 }
 #myLife img{
   transition: all 0.2s linear;
