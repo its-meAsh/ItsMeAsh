@@ -46,12 +46,14 @@ main>div{
   height: 80vh;
 }
 .containerLeft>div{
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
   width: min(80vw,80vh);
   height: min(80vw,80vh);
   justify-content: center;
   align-items: center;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 .containerLeft>div>div{
   flex-basis: min(7vw,7vh);
@@ -69,4 +71,4 @@ main>div{
 .containerLeft>div>div:hover{
   background-color: rgba(0,0,0,0.2)!important;
   color: var(--c2)!important;
-}
+  }
