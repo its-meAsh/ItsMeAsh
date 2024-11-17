@@ -174,3 +174,11 @@ let interval = setInterval(() => {
   secs++;
   time.innerHTML = secs;
 }, 1000)
+
+const projectBoxes = document.querySelectorAll(".projectBox");
+for (let each of projectBoxes){
+  each.addEventListener('click',(e)=>{
+    let id = e.currentTarget.id;
+    window.open(`https://its-meash.github.io/itsMeAsh/projects/${id}/index.html`,"_blank")
+  })
+}
