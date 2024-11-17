@@ -46,14 +46,12 @@ main>div{
   height: 80vh;
 }
 .containerLeft>div{
-  display: grid;
+  display: flex;
   flex-wrap: wrap;
   width: min(80vw,80vh);
   height: min(80vw,80vh);
   justify-content: center;
   align-items: center;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 .containerLeft>div>div{
   flex-basis: min(7vw,7vh);
