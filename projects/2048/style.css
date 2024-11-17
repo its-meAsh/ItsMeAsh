@@ -1,0 +1,72 @@
+main{
+  display: flex;
+  flex-wrap: wrap;
+}
+main>div{
+  width: 50%;
+  flex-basis: max(50vw,50vh);
+  flex-grow: 1;
+}
+
+.containerRight{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5vh;
+}
+
+.score{
+  border: 0.25vh solid var(--c2);
+  padding: 2vh;
+  width: max-content;
+  text-align: center;
+}
+.controlBox{
+  text-align: center;
+  border: 0.25vh solid var(--c2);
+  padding: 1.25vh;
+  flex-grow: 1;
+  cursor: pointer;
+  width: min(10vh,10vw);
+}
+.controls{
+  display: flex;
+  flex-direction: column;
+}
+.controls>div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containerLeft{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.containerLeft>div{
+  display: flex;
+  flex-wrap: wrap;
+  width: min(80vw,80vh);
+  height: min(80vw,80vh);
+  justify-content: center;
+  align-items: center;
+}
+.containerLeft>div>div{
+  flex-basis: min(7vw,7vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: min(7vw,7vh);
+  height: min(7vw,7vh);
+  padding: min(0.5vw,0.5vh);
+  transition: all 0.2s linear;
+  color: var(--c1);
+  cursor: pointer;
+  font-size: small;
+}
+.containerLeft>div>div:hover{
+  background-color: rgba(0,0,0,0.2)!important;
+  color: var(--c2)!important;
+}
