@@ -179,6 +179,6 @@ const projectBoxes = document.querySelectorAll(".projectBox");
 for (let each of projectBoxes){
   each.addEventListener('click',(e)=>{
     let id = e.currentTarget.id;
-    window.open(`https://its-meash.github.io/itsMeAsh/projects/${id}/index.html`,"_blank")
+    location.replace(`./projects/${id}/index.html`)
   })
 }
