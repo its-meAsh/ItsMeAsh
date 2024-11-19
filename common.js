@@ -94,3 +94,14 @@ function randColor(){
   }
   return color
 }
+
+      function getFreq(array){
+  let note = {}
+  for (let each of array){
+    if (!checkIn(each,Object.keys(note))){
+      note[each] = 0;
+    }
+    note[each]++;
+  }
+  return note
+    }
