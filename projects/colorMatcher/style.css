@@ -1,0 +1,126 @@
+body {
+  background-color: var(--c2);
+  color: var(--c1);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10vh;
+}
+
+
+.results {
+  text-align: center;
+  font-size: 130%;
+  display: none;
+  flex-direction: column;
+  gap: 5vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.colorRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vh;
+}
+
+.colorBox {
+  background-color: var(--c1);
+  width: 25vh;
+  height: 25vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s linear;
+}
+
+.colorCode {
+  font-size: 105%;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2vh;
+}
+
+.controlBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10vh;
+}
+
+.controlBox>input {
+  width: 40vh;
+  cursor: pointer;
+  -webkit-appearance: none
+}
+
+.hintBox {
+  padding: 1vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+  width: 4vh;
+  height: 4vh;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.controlButton {
+  padding: 2vh;
+  width: 30vh;
+  text-align: center;
+  transition: all 0.2s linear;
+  cursor: pointer;
+
+}
+
+.controlButton:hover,
+.hintBox:hover {
+  transform: scale(0.9);
+}
+
+#playAgainButton,
+#checkButton {
+  background-color: green;
+}
+
+#newGameButton {
+  background-color: orange;
+  color: var(--c2);
+}
+
+#advancedButton {
+  background-color: red;
+}
+
+#rHint{
+  background-color: red;
+}
+#gHint{
+  background-color: green;
+}
+#bHint{
+  background-color: blue;
+}
+#aHint{
+  background-image: linear-gradient(90deg,black,white)
+}

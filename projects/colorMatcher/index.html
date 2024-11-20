@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Color Matcher</title>
+
+  <link rel="stylesheet" href="../../initial.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="../../common.js" defer></script>
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="projectName">
+      <h1>Color Matcher</h1>
+    </div>
+  </header>
+  <main>
+    <div class="colorRow">
+      <div class="colorBox">
+        <div class="colorCode">#??????</div>
+      </div>
+      <div class="colorBox">
+        <div class="colorCode">#000000</div>
+      </div>
+    </div>
+    <div class="options">
+      <div class="controlBox"><input type="range" min="0" max="255" id="rRange" step="1">
+        <div class="hintBox" id="rHint"><img src="../../resource/images/bulb.svg" alt="H"></div>
+      </div>
+      <div class="controlBox"><input type="range" min="0" max="255" id="gRange" step="1">
+        <div class="hintBox" id="gHint"><img src="../../resource/images/bulb.svg" alt="H"></div>
+      </div>
+      <div class="controlBox"><input type="range" min="0" max="255" id="bRange" step="1">
+        <div class="hintBox" id="bHint"><img src="../../resource/images/bulb.svg" alt="H"></div>
+      </div>
+      <div class="controlBox"><input type="range" min="0" max="255" id="aRange" step="1" value="255">
+        <div class="hintBox" id="aHint"><img src="../../resource/images/bulb.svg" alt="H"></div>
+      </div>
+    </div>
+    <div class="controls">
+      <div class="controlButton" id="checkButton">Check</div>
+      <div class="controlButton" id="newGameButton">New</div>
+      <div class="controlButton" id="advancedButton">Advanced</div>
+    </div>
+
+    <div class="results">
+      <span id="resultSpan"></span>
+      <div class="controlButton" id="playAgainButton">Play again</div>
+    </div>
+  </main>
+</body>
+
+</html>
